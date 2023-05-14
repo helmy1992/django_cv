@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views
+from .views import list_view
 urlpatterns = [
-path('mycv/', views.mycv, name='mycv'),
+path('mycv/', mycv, name='mycv')
+path('list/',list_view,name='list')
 ]
